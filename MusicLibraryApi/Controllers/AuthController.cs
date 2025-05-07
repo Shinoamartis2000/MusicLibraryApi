@@ -44,7 +44,7 @@ namespace MusicLibraryApi.Controllers
             }
 
             var token = GenerateJwtToken(dbUser);
-            return Ok(token);
+            return Ok(new { token = token });
         }
 
         // GET: api/Auth/{id}
